@@ -9,13 +9,12 @@ private:
     Brain   *_brain;
 
 public:
-    Cat( void );
-    ~Cat( void );
+    Cat(void);
+    ~Cat(void);
+    Cat(const Cat& src);
+    Cat& operator=(const Cat& src);
 
-    Cat( const Cat& src );
-    Cat& operator=( const Cat& src );
-
-    void   makeSound( void ) const;
+    void   makeSound(void) const;
 };
 
 #endif

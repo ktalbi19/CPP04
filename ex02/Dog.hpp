@@ -9,13 +9,12 @@ private:
     Brain   *_brain;
 
 public:
-    Dog( void );
-    ~Dog( void );
+    Dog(void);
+    ~Dog(void);
+    Dog(const Dog& src);
+    Dog& operator=(const Dog& src);
 
-    Dog( const Dog& src );
-    Dog& operator=( const Dog& src );
-
-    void   makeSound( void ) const;
+    void   makeSound(void) const;
 };
 
 #endif
